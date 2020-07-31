@@ -1,0 +1,334 @@
+:root {
+  --mainBlue: #003545;
+  --mainOrange: #fe5f01;
+  --maingreen: #20ab3b;
+  --mainBlack: #000000;
+  --mainWhite: #fff;
+  --max-width: 1170px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--mainGreen);
+  background: var(--mainBlue);
+  font-family: "arial", sans-serif;
+}
+
+/* --------------- Navbar ---------------- */
+#logo1 {
+  height: 50px;
+  width: 93px;
+}
+
+/* nav bar */
+#nav-icon {
+  font-size: 1.5rem;
+  color: var(--mainGreen);
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.navbar-center {
+  width: 100%;
+  height: 4.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--mainBlue);
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #b9e3c1;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: #fff;
+}
+
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.btn {
+  height: 2.3rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  border-width: 0;
+  color: var(--mainWhite);
+}
+
+.btn1 {
+  background: rgb(50, 86, 98);
+}
+
+.btn2 {
+  background-color: var(--maingreen);
+}
+.btn3 {
+  color: var(--mainBlack);
+}
+/* ***** end of nav bar***** */
+/* ***** corona*****  */
+.corona {
+  background-color: red;
+  color: var(--mainWhite);
+  text-align: center;
+  width: 100%;
+}
+/* ***** end of  corona*****  */
+/* ***** welcome*****  */
+.main-info-section {
+  position: relative;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.welcome {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.welcome-img,
+.sharing {
+  width: 100%;
+  z-index: 1;
+}
+.img-container h1 {
+  position: absolute;
+  z-index: 2;
+  top: 2%;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: var(--mainBlue);
+}
+.img-container p {
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  right: 4%;
+  width: 70vw;
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--maingreen);
+  font-weight: bold;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 4;
+  bottom: 6%;
+  right: 6%;
+  width: 24vw;
+}
+.whatsapp img,
+.facebook img,
+.instagram img {
+  width: 8vw;
+  padding: 0 0.1rem;
+}
+
+/* ******************** */
+.whatsapp-number button {
+  position: absolute;
+  left: .9rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: .4rem;
+  border-color: var(--mainOrange);
+  padding: .1rem;
+  background-color: var(--mainBlue)
+  ;
+  color: var(--mainWhite);
+  font-weight: bold;
+}
+.whatsapp-number img {
+  width: 1.8rem;
+  z-index: 1;
+}
+
+.chat-container  {
+  position: relative;
+}
+.chat-container p {
+  color: var(--mainBlue);
+  background-color: var(--mainWhite);
+  position: absolute;
+  z-index: 3;
+  bottom: 10%;
+  left: 14vw;
+  width: 60vw;
+  font-weight: bold;
+  font-size: 1.0rem;
+  border-radius: .4rem;
+  text-align: center;
+}
+
+/* ***** end of welcome*****  */
+/* ***** start of shops container*****  */
+.shops-container {
+position: relative;
+}
+
+.shops-container img {
+  width: 100%;
+  max-width: var(--max-width);
+  z-index: 1;
+  opacity: .8;
+  box-shadow:  0 0 20px #777777;
+
+}
+.all-in {
+  position: absolute;
+  z-index: 2;
+  top: 3%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--mainBlue);
+  background: var(--mainWhite) ;
+  border-radius: .4rem;
+  padding: 0 .3rem;
+}
+
+.fa-cart-plus {
+  font-size: 1.7rem;
+  padding: .2rem;
+  background-color: orangered;
+  border-radius: .4rem;
+}
+
+.fa-map-marker-alt {
+  color: var(--maingreen);
+  font-size: 1.4rem;
+}
+
+.fa-search {
+  color: var(--mainOrange);
+  font-size: 1.2rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 3;
+  bottom: 4%;
+  left: 30%;
+  padding: .2rem;
+  color: var(--mainBlue);
+  font-size: 2rem;
+  background: var(--mainWhite);
+  border-radius: .4rem;
+}
+.location p {
+  padding: 0 .3rem;
+  font-size: 1.3rem;
+}
+.location button {
+  width: 2rem;
+  height: 1.6rem;
+  border-color: var(--mainOrange);
+  border-radius: .4rem;
+}
+/* ***** start of shops container*****  */
+/* ***** footer*****  */
+hr {
+  background-color: var(--maingreen);
+  height: .3rem;
+}
+.about {
+  background-color: var(--mainBlue);
+  position: relative;
+}
+
+.about h1{
+  font-size: 4.5rem;
+  position: absolute;
+  z-index: 1;
+  opacity: .3;
+  font-weight: bold;
+  left: 4%;
+}
+
+.call img,
+.socials img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.socials,
+.call {
+  display: flex;
+  padding-top: .4rem ;
+}
+
+.contact-us {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  top: 4rem;
+  left: 10%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainBlue);
+  border-radius: .4rem;
+  padding: .4rem;
+  text-align: center;
+  box-shadow: 0 0 10px #777777;
+}
+
+.contact-us p {
+  color: #DAE2DE;
+  padding: .2rem;
+  font-size: .9rem;
+}
+.payment {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px #777777;
+}
+.payment img {
+  width: 90%;
+}
+/* ***** footer*****  */
